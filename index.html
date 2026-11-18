@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aiden Aydenjian — IT Student &amp; Builder</title>
+  <meta name="description" content="Aiden Aydenjian is an IT student in Middleton, MA who runs a self-hosted home lab, writes his own websites, and mods every device he can get his hands on. Open to co-op roles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <a class="logo" href="#top" aria-label="Aiden Aydenjian — home">
+      <span class="logo-mark">aa</span><span class="logo-dot">/&gt;</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Projects</a>
+      <a href="#stack">Skills</a>
+      <a href="#education">Education</a>
+    </nav>
+    <a class="pill pill--light header-cta" href="#contact">Let’s talk</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <a href="#about">About</a>
+    <a href="#work">Projects</a>
+    <a href="#stack">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shapes" aria-hidden="true">
+        <span class="shape shape--pill" data-depth="0.25"></span>
+        <span class="shape shape--ring" data-depth="0.4"></span>
+        <svg class="shape shape--squiggle" data-depth="0.15" viewBox="0 0 300 120" fill="none">
+          <path d="M10 80 C 50 10, 90 10, 120 60 S 190 120, 220 60 S 280 0, 295 40" stroke="currentColor" stroke-width="22" stroke-linecap="round"/>
+        </svg>
+        <span class="shape shape--brace" data-depth="0.35">{ }</span>
+      </div>
+
+      <div class="hero-inner">
+        <p class="status reveal"><span class="status-dot"></span>Open to co-op roles</p>
+        <h1 class="hero-title reveal" id="hero-title">
+          <span class="hero-name">Aiden<br>Aydenjian</span>
+          <span class="hero-line">IT student who
+            <span class="rotator" aria-live="off">
+              <span class="rotator-word is-active">builds servers.</span>
+              <span class="rotator-word">breaks things.</span>
+              <span class="rotator-word">mods consoles.</span>
+              <span class="rotator-word">fixes them again.</span>
+            </span>
+          </span>
+        </h1>
+        <p class="hero-sub reveal">Based in <em>Middleton, MA</em>. I run a self-hosted home lab, write my own websites, and mod every device I can get my hands on.</p>
+        <div class="hero-ctas reveal">
+          <a class="pill pill--lime" href="#work">See my projects <span aria-hidden="true">↓</span></a>
+          <a class="pill pill--ghost" href="#contact">Get in touch</a>
+        </div>
+        <button class="term-hint reveal" type="button" data-terminal>
+          <span class="term-hint-key">&gt;_</span>
+          <span class="term-hint-desk">psst — press <kbd>~</kbd> for a terminal</span>
+          <span class="term-hint-touch">tap for a terminal</span>
+        </button>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" id="marquee-track"></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about paper" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <p class="eyebrow">01 — About</p>
+        <h2 class="visually-hidden" id="about-title">About me</h2>
+        <p class="statement" data-words>
+          I’m a hands-on IT student who builds, breaks, and modifies technology for fun. I’m looking for a co-op role where I can point that curiosity at real software and hardware problems.
+        </p>
+        <div class="stats">
+          <div class="stat reveal"><span class="stat-num" data-count="1200">0</span><span class="stat-label">hour IT program in hardware, networking, Linux &amp; security</span></div>
+          <div class="stat reveal"><span class="stat-num" data-count="7">0</span><span class="stat-label">hands-on projects, from home lab to console mods</span></div>
+          <div class="stat reveal"><span class="stat-num" data-count="2">0</span><span class="stat-label">certifications, with the CCNA in progress</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow eyebrow--dark">02 — Projects</p>
+          <h2 class="section-title" id="work-title">Things I’ve built<br>(and broken)</h2>
+        </div>
+        <div class="stack-cards" id="projects"><!-- rendered from content.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills paper" id="stack" aria-labelledby="stack-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">03 — Skills</p>
+          <h2 class="section-title" id="stack-title">What I work with</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter skills" id="skill-filters"></div>
+        <ul class="chips" id="skill-chips"></ul>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="experience paper" id="education" aria-labelledby="exp-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">04 — Education &amp; certifications</p>
+          <h2 class="section-title" id="exp-title">Where I’m learning</h2>
+        </div>
+        <ol class="rows" id="experience-list"></ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact-wrap paper" id="contact" aria-labelledby="contact-title">
+      <div class="contact">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <p class="eyebrow eyebrow--dark">05 — Contact</p>
+        <h2 class="contact-title" id="contact-title">Have a co-op spot?<br>Let’s talk.</h2>
+        <a class="pill pill--light pill--big" href="mailto:aidenaydenjian@gmail.com">aidenaydenjian@gmail.com <span aria-hidden="true">→</span></a>
+        <button class="copy-btn" type="button" data-copy="aidenaydenjian@gmail.com">Copy email</button>
+        <div class="contact-links">
+          <a class="pill pill--ghost" href="https://github.com/matchapatcha" rel="noopener">GitHub ↗</a>
+          <a class="pill pill--ghost" href="https://www.linkedin.com/in/aiden-aydenjian-71830a390/" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-top wrap">
+      <p class="footer-tag">Open to co-op roles<br>in IT &amp; software.</p>
+      <div class="footer-cols">
+        <div>
+          <p class="footer-head">Explore</p>
+          <a class="tag" href="#about">About</a>
+          <a class="tag" href="#work">Projects</a>
+          <a class="tag" href="#stack">Skills</a>
+          <a class="tag" href="#education">Education</a>
+        </div>
+        <div>
+          <p class="footer-head">Elsewhere</p>
+          <a class="tag" href="https://aidenaydenjian.dev" rel="noopener">aidenaydenjian.dev</a>
+          <a class="tag" href="mailto:aidenaydenjian@gmail.com">Email</a>
+          <a class="tag" href="https://github.com/matchapatcha" rel="noopener">GitHub</a>
+          <a class="tag" href="https://www.linkedin.com/in/aiden-aydenjian-71830a390/" rel="noopener">LinkedIn</a>
+        </div>
+        <div>
+          <p class="footer-head">© <span id="year">2026</span> Aiden Aydenjian</p>
+          <p class="footer-small">Middleton, MA.<br>Built by hand. No trackers.</p>
+          <a class="footer-small footer-top-link" href="#top">Back to top ↑</a>
+          <button class="footer-small footer-top-link footer-term" type="button" data-terminal>&gt;_ Open terminal</button>
+        </div>
+      </div>
+    </div>
+    <p class="wordmark" aria-hidden="true"><span id="wordmark">Aiden Aydenjian</span></p>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+  <script src="terminal.js"></script>
+</body>
+</html>
